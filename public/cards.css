@@ -1,0 +1,33 @@
+
+.header{
+    text-align:center;
+    height:100px;
+    top-padding:0;
+   
+}
+
+.card-flex{
+    display:flex;
+    flex-direction:row;
+}
+
+.cards{
+    border:1px solid black;
+}
+
+.form-container{
+    width:300px;
+    margin:0 auto;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.form-filter{
+    width:100%;
+    border:1px solid #ccc;
+    border-radius:5px;
+    display:flex;
+    flex-direction:row;
+    row-gap:15px;
+}

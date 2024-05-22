@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cards.css">
+    <title>Properties List</title>
+    <!-- <script>
+        function getProperties(){
+            const place=place.value;
+            
+            
+        }
+    </script> -->
+</head>
+<body>
+    <div class="form-filter">
+        <h1>Filter : </h1>
+        <br>
+        <div>
+        <form action="/buyer/filter">
+            <div >
+                <label for="Place">Place:</label>
+                <input type="text" id="Place" name="place" placeholder="Place"  autocomplete="off"/>
+            
+        
+                <label for="Area">Area:</label>
+                <input type="text" id="Area" name="area" placeholder="Area"  />
+            
+                <label for="Bedrooms">No. of Bedrooms:</label>
+                <input type="text" id="Bedrooms" name="bedrooms" placeholder="Bedrooms" />
+            
+            
+                <label for="Bathroom">Bathroom:</label>
+                <input type="text" id="Bathroom" name="bathroom" placeholder="Bathroom"  />
+            </div>
+            <div class="items">
+            <div class=" radio">                
+                <input type="radio" id="Hospital" value="Hospital" name="hospital"  />
+                <label for="Hospital" id="">Hospital</label>
+            </div>
+            <div class=" radio">                
+                <input type="radio" id="Colleges" value="Colleges" name="colleges"  />
+                <label for="Colleges" id="">Colleges</label>
+            </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        </div>
+        </div>
+
+    
+    
+        <div class="header"><h1 >List of Properties</h1></div>   
+        <div class="card-flex">
+            <div class="cards"></div>
+           
+            
+            <ul>
+                <% properties.forEach(property => { %>
+                    <li>
+                        <h2><%= property.place %></h2>
+                        <p>Area: <%= property.area %> sq ft</p>
+                        <p>Bedrooms: <%= property.bedrooms %></p>
+                        <p>Bathrooms: <%= property.bathroom %></p>
+                        <p>Nearby Hospitals: <%= property.hospital %></p>
+                        <p>Nearby Colleges: <%= property.colleges %></p>
+                    </li>
+                <% }) %>
+            </ul>
+            </div>
+        
+        </div>
+   
+
+</body>
+</html>

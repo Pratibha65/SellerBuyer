@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1 style="text-align: center;"> Welcome Seller!!</h1>
+    <div class="form-container">
+    <form action="/seller" method="post">
+        <div class="form-group">
+            <label for="Place">Place:</label>
+            <input type="text" id="Place" name="place" placeholder="Place" required  autocomplete="off"/>
+        </div>
+        <div class="form-group">
+            <label for="Area">Area:</label>
+            <input type="text" id="Area" name="area" placeholder="Area" required />
+        </div>
+        <div class="form-group">
+            <label for="Bedrooms">No. of Bedrooms:</label>
+            <input type="text" id="Bedrooms" name="bedrooms" placeholder="Bedrooms" required />
+        </div>
+        <div class="form-group">
+            <label for="Bathroom">Bathroom:</label>
+            <input type="text" id="Bathroom" name="bathroom" placeholder="Bathroom" required />
+        </div>
+        <div class="items">
+        <div class=" radio">                
+            <input type="radio" id="Hospital" value="Hospital" name="hospital" required />
+            <label for="Hospital" id="">Hospital</label>
+        </div>
+        <div class=" radio">                
+            <input type="radio" id="Colleges" value="Colleges" name="colleges" required />
+            <label for="Colleges" id="">Colleges</label>
+        </div>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    </div>
+
+    
+</body>
+</html>
